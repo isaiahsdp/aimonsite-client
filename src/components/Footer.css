@@ -1,0 +1,105 @@
+.footer-container {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  height: 176px;
+  margin-top: auto;
+  position: relative; 
+}
+
+.aim-text-footer {
+  font-feature-settings: "clig" off, "liga" off;
+  background: linear-gradient(
+    180deg,
+    #8ec2f3 100%,
+    #fffcfc 0%,
+    rgba(86, 165, 238, 0) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font: 900 50px/66% Barlow, -apple-system, Roboto, Helvetica, sans-serif;
+  margin-left: -80%;
+  margin-bottom: 20px; 
+  margin-top: -39px;
+}
+
+.rectangle {
+  background-color: #CDD1D4;
+  height: 1px;
+  width: 85%;
+  margin: 0 auto; 
+}
+
+.nav-links-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  margin-top: 10px; 
+  margin-left: -66.3%;
+  width: 20%; 
+  padding: 0 10%; 
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 90%;
+  color: grey; 
+  text-decoration: none; 
+  margin: 0 10px;
+}
+
+.poppins-regular:hover {
+  color: grey; 
+}
+
+.copyright-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 90%;
+  color: grey; 
+  margin-right: -73%; 
+  text-align: right;
+  margin-top: -25px;
+}
+
+.contact-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 90%;
+  color: grey;
+  margin-right: -71%;
+  text-align: right;
+  margin-top: -70px;
+  justify-content: space-between;
+  position: absolute
+}
+
+@media (max-width: 767px) {
+  .aim-text-footer {
+    font: 900 40px/66% Barlow, -apple-system, Roboto, Helvetica, sans-serif;
+    margin-left: -60%;
+  }
+
+  .contact-text {
+    font-size: 70%;
+    margin-left: -110px;
+    margin-top: -90px;
+  }
+
+  .copyright-text {
+    font-size: 50%;
+    margin-left: -70px; 
+    margin-top: -15px;
+  }
+
+  .nav-links-footer {
+    font-size: 12px
+  }
+}

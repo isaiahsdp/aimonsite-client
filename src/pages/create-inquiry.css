@@ -1,0 +1,104 @@
+.main-container {
+  width: 90%; 
+  max-width: 1002px;
+  height: auto; 
+  min-width: 300px; 
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255); 
+  border-radius: 15px; 
+  margin-top: 100px;
+  justify-content: flex-start;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 150px
+}
+
+.dropdown-container {
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 10px; 
+  width: 100%; 
+  margin-bottom: 10px; 
+}
+
+.dropdown-wrapper {
+  width: calc(50% - 10px); 
+  margin-bottom: 2 0px; 
+}
+
+.input,
+select {
+  width: 100%; 
+  padding: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.inquiry-info {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  text-align: left; 
+  margin-right: auto; 
+}
+
+.button-inquiry-wrapper {
+  display: flex;
+  justify-content: space-between; 
+  width: 100%; 
+  margin-top: 20px; 
+  align-items: center; 
+}
+
+.button-container {
+  display: flex; 
+  justify-content: flex-end; 
+  width: 100%; 
+  margin-top: 20px; 
+}
+
+.submit-button {
+  background-color: #006DA3; 
+  color: white; 
+  border: none; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  font-size: 16px; 
+  font-family: "Poppins", sans-serif; 
+  transition: background-color 0.3s; 
+}
+
+.submit-button:hover {
+  background-color: #00547e; 
+}
+
+
+@media (max-width: 767px) {
+  .dropdown-wrapper {
+    width: 100%; 
+  }
+
+  .main-container {
+    padding: 15px; 
+  }
+
+  input,
+  select {
+    font-size: 14px; 
+  }
+}

@@ -1,0 +1,20 @@
+/* BackgroundMain.css */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden; 
+}
+
+.full-screen-div {
+  width: 100%; 
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  background: linear-gradient(270deg, #1084bd 0%, #9ad6f3 100%); 
+  overflow-x: hidden; 
+}
