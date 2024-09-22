@@ -59,11 +59,15 @@ export const CreateInquiry = () => {
     }
 
     try {
-      await axios.post("http://localhost:3001/inquiries", formData, {
-        headers: {
-          "Content-Type": "multipart/form-data", // Important for file uploads
-        },
-      });
+      await axios.post(
+        "https://aimonsite-02e4361db351.herokuapp.com/inquiries",
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data", // Important for file uploads
+          },
+        }
+      );
       alert("Inquiry created");
       navigate("/");
     } catch (err) {
