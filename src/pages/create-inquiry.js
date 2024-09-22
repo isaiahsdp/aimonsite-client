@@ -81,7 +81,7 @@ export const CreateInquiry = () => {
       <div className="main-container poppins-semibold">
         <h2>Create Inquiry</h2>
         <form onSubmit={onSubmit}>
-          <label htmlFor="name">Name</label>
+          <label htmlFor="name">Name*</label>
           <input
             type="text"
             id="name"
@@ -90,7 +90,7 @@ export const CreateInquiry = () => {
             className="input"
           />
 
-          <label htmlFor="number">Number</label>
+          <label htmlFor="number">Number*</label>
           <input
             type="text"
             id="number"
@@ -99,7 +99,7 @@ export const CreateInquiry = () => {
             className="input"
           />
 
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email">Email*</label>
           <input
             type="text"
             id="email"
@@ -119,7 +119,7 @@ export const CreateInquiry = () => {
 
           <div className="dropdown-container">
             <div className="dropdown-wrapper">
-              <label htmlFor="typeOfService">Type of Service</label>
+              <label htmlFor="typeOfService">Type of Service*</label>
               <select
                 id="typeOfService"
                 name="typeOfService"
@@ -143,7 +143,7 @@ export const CreateInquiry = () => {
             </div>
 
             <div className="dropdown-wrapper">
-              <label htmlFor="productType">Product Type</label>
+              <label htmlFor="productType">Product Type*</label>
               <select
                 id="productType"
                 name="productType"
