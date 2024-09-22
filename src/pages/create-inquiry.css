@@ -87,6 +87,9 @@ select {
   background-color: #00547e; 
 }
 
+.required {
+  color: red
+}
 
 @media (max-width: 767px) {
   .dropdown-wrapper {
