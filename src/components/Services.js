@@ -15,12 +15,12 @@ const Services = () => {
           <div className="title-about">About</div>
           <div className="poppins-regular-about">
             AIM Blind and Drapery is a family-run business with over 21 years of
-            experience in the Bay Area Peninsula. As a division of Rebarts
-            Interiors Hunter Douglas Gallery, we specialize in professional
-            window blind repairs, restoring beauty and functionality with fast
-            turnaround times. Since 2009, we have been an authorized Hunter
-            Douglas repair center, trusted by thousands of clients for our
-            exceptional service and craftsmanship.
+            experience serving the Bay Area Peninsula. As a proud division of
+            Rebarts Interiors Hunter Douglas Gallery, we specialize in
+            professional window blind repairs, dedicated to restoring beauty and
+            functionality with fast turnaround times. Since 2009, we have been
+            an authorized Hunter Douglas repair center, trusted by thousands of
+            clients for our exceptional service and craftsmanship.
           </div>
         </div>
       </div>

@@ -27,7 +27,7 @@ const HomeInfo = () => {
           <div className="text-image-container">
             <div className="textfour">
               We have been in the Hunter Douglas repair industry since 2009,
-              servicing over hundreds clients.
+              servicing over thousands of clients.
             </div>
             <img src="/shirt.png" alt="Shirt" className="info-images" />
           </div>
@@ -36,8 +36,8 @@ const HomeInfo = () => {
             <img src="/sparkles.png" alt="Sparkles" className="info-images" />
             <div className="textfour">
               Specializing in professional window blind repairs, we offer a full
-              range of services to restore your blind’s beauty and operation
-              seamlessly.
+              range of services to seamlessly restore the beauty and
+              functionality of your blinds.
             </div>
           </div>
         </div>
