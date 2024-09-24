@@ -14,6 +14,8 @@ export const CreateInquiry = () => {
     productType: "",
     brand: "",
     age: "",
+    liftingMechanism: "",
+    notes: "",
   });
 
   const [otherInputs, setOtherInputs] = useState({
@@ -22,6 +24,8 @@ export const CreateInquiry = () => {
   });
 
   const [file, setFile] = useState(null);
+  const [showSuccessPopup, setShowSuccessPopup] = useState(false);
+  const navigate = useNavigate();
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -68,14 +72,17 @@ export const CreateInquiry = () => {
           },
         }
       );
-      alert("Inquiry created");
-      navigate("/");
+      setShowSuccessPopup(true);
     } catch (err) {
       console.error(err);
     }
   };
 
-  const navigate = useNavigate();
+  const handleHomeRedirect = () => {
+    setShowSuccessPopup(false);
+    navigate("/");
+  };
+
   return (
     <div className="full-screen-div">
       <div className="main-container poppins-semibold">
@@ -143,10 +150,8 @@ export const CreateInquiry = () => {
               <label htmlFor="age">Age of Product</label>
               <select id="age" name="age" onChange={handleChange}>
                 <option value=""></option>
-                <option value="Less than 1 year">Less than 1 year</option>
-                <option value="1-3 years">1-3 years</option>
-                <option value="3-5 years">3-5 years</option>
-                <option value="More than 5 years">More than 5 years</option>
+                <option value="Less than 7 years">Less than 7 years</option>
+                <option value="More than 7 years">More than 7 years</option>
               </select>
             </div>
 
@@ -161,9 +166,7 @@ export const CreateInquiry = () => {
               >
                 <option value=""></option>
                 <option value="Blinds">Blinds</option>
-                <option value="Drapes">Drapes</option>
                 <option value="Shades">Shades</option>
-                <option value="Shutters">Shutters</option>
                 <option value="Other">Other</option>
               </select>
               {inquiry.productType === "Other" && (
@@ -200,14 +203,41 @@ export const CreateInquiry = () => {
               )}
             </div>
 
-            <label htmlFor="file">Upload Image</label>
-            <input
-              type="file"
-              id="file"
-              name="file"
-              accept="image/*"
-              onChange={handleFileChange}
+            <div className="dropdown-wrapper">
+              <label htmlFor="liftingMechanism">Lifting Mechanism</label>
+              <select
+                id="liftingMechanism"
+                name="liftingMechanism"
+                onChange={handleChange}
+                className="input"
+              >
+                <option value=""></option>
+                <option value="Cordlock">Cordlock</option>
+                <option value="EasyRise">EasyRise</option>
+                <option value="LiteRise">LiteRise</option>
+                <option value="UltraGlide">UltraGlide</option>
+              </select>
+            </div>
+
+            <div className="dropdown-wrapper">
+              <label htmlFor="file">Upload Image</label>
+              <input
+                type="file"
+                id="file"
+                name="file"
+                accept="image/*"
+                onChange={handleFileChange}
+                className="input"
+              />
+            </div>
+
+            <label htmlFor="notes">Notes</label>
+            <textarea
+              id="notes"
+              name="notes"
+              onChange={handleChange}
               className="input"
+              placeholder="Enter any additional notes or requests here"
             />
           </div>
           <div className="button-inquiry-wrapper">
@@ -223,6 +253,16 @@ export const CreateInquiry = () => {
           </div>
         </form>
       </div>
+      {showSuccessPopup && (
+        <div className="popup-overlay">
+          <div className="popup-content">
+            <h3>Thank you for filling out the form</h3>
+            <h4>We will get back to you as soon as possible!</h4>
+            <h5>For further inquiries, please contact aimonsite@gmail.com</h5>
+            <button onClick={handleHomeRedirect}>Home</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
