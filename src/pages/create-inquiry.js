@@ -165,8 +165,13 @@ export const CreateInquiry = () => {
                 onChange={handleChange}
               >
                 <option value=""></option>
-                <option value="Blinds">Blinds</option>
-                <option value="Shades">Shades</option>
+                <option value="Honeycomb/Cellular Shades">
+                  Honeycomb/Cellular Shades
+                </option>
+                <option value="Silhouette Shades">Silhouette Shades</option>
+                <option value="Wood Blinds">Wood Blinds</option>
+                <option value="Roman Shades">Roman Shades</option>
+                <option value="Metal Blinds">Metal Blinds</option>
                 <option value="Other">Other</option>
               </select>
               {inquiry.productType === "Other" && (

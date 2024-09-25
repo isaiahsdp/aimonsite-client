@@ -20,8 +20,11 @@ export const Navbar = () => {
             Inquiry
           </Link>
         </div>
-        <div className="poppins-regular-light-nav">
-          260 El Camino Real, San Carlos, CA 94070
+        <div className="contact-info">
+          <div className="poppins-regular-light-nav">
+            260 El Camino Real, San Carlos
+          </div>
+          <div className="poppins-regular-light-nav">(650)862-5588</div>
         </div>
       </div>
     </div>

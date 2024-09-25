@@ -84,6 +84,13 @@
   margin-left: auto
 }
 
+.contact-info {
+  display: flex;
+  flex-direction: column; /* Stacks address and phone number */
+  text-align: right;
+  margin-left: auto;
+}
+
 @media (max-width: 767px) {
   .navbar {
     justify-content: space-between flex-start; /* Keep items spaced evenly */
@@ -97,6 +104,14 @@
     overflow-x: auto; /* Allows horizontal scrolling if necessary */
     flex-wrap: nowrap; /* Prevent wrapping */
     order: 2
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column; /* Stack address and phone vertically */
+    text-align: right; /* Right-align contact info */
+    margin-left: auto; /* Keep contact info aligned to the right */
+    order: 3; /* Place contact info after nav-links */
   }
 
   .poppins-regular-light-nav {
